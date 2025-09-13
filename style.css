@@ -264,18 +264,34 @@ main {
   z-index: 1;
 }
 
-.main-sec-1 .center {
-  z-index: 3;
-  position: relative;
-  width: 515px;
-  color: #ffffff;
+.main-sec-1 .gradient-border {
+  width: 77.3%;
+  padding: 1px;
+  border-radius: 10.4px;
+  background: linear-gradient(
+      214.24deg,
+      rgba(202, 255, 51, 0.2) 0%,
+      rgba(202, 255, 51, 0) 11.24%
+    ),
+    linear-gradient(
+      214.24deg,
+      rgba(202, 255, 51, 0) 91.73%,
+      rgba(202, 255, 51, 0.2) 99.95%
+    );
+  display: inline-block;
+}
+
+.main-sec-1 .gradient-border .center {
+  background-color: #1a1a1a;
+  border-radius: 10.4px;
+  padding: 34.68px;
   display: flex;
   flex-direction: column;
-  background-color: #1a1a1a;
-  padding: 34.68px;
-  border-radius: 10.4px;
   gap: 25px;
-  border: 0.87px solid #262626;
+  color: #ffffff;
+  position: relative;
+  width: 515px;
+  z-index: 3;
 }
 
 .main-sec-1 .center .first {
