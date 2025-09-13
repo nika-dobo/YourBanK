@@ -1908,6 +1908,195 @@ footer .bottom div img {
   margin-top: 290px;
 }
 
+/*! ----- login and sing up ----- */
+
+.log-in {
+  width: 69%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 100px 150px;
+  color: #fff;
+  gap: 80px;
+  text-align: center;
+}
+
+.log-in .filtre {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  filter: grayscale(100%);
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+.log-in .bk {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(90deg);
+  top: -8px;
+  right: 0px;
+  width: 26%;
+}
+
+.log-in .first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  z-index: 2;
+}
+
+.log-in .first h1 {
+  font-size: var(--h1FontSize);
+  color: #caff33;
+  font-weight: 500;
+}
+
+.log-in .first p {
+  font-size: var(--pFontSize);
+  color: #bfbfbf;
+  font-weight: 300;
+}
+
+.log-in form {
+  display: grid;
+  grid-template-columns: 498px 498px;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.log-in form input {
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 88px;
+  padding: 24px;
+  width: 100%;
+  color: #59595a;
+  font-size: var(--pFontSize);
+  font-weight: 300;
+  z-index: 2;
+}
+
+.input-wrapper {
+  position: relative; /* parent reference */
+  width: 100%;
+}
+
+.log-in form #password {
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 88px;
+  padding: 24px 48px 24px 24px;
+  width: 100%;
+  color: #59595a;
+  font-size: var(--pFontSize);
+  font-weight: 300;
+  z-index: 2;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("img/Icon (2).png") no-repeat center/contain;
+  cursor: pointer;
+}
+
+.log-in form input::placeholder {
+  color: #59595a;
+  font-size: var(--pFontSize);
+  font-weight: 300;
+}
+
+.log-in a {
+  margin-top: -40px;
+  z-index: 2;
+  font-size: var(--pFontSize);
+  font-weight: 400;
+  color: #fff;
+}
+
+.log-in .buttons {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  width: 518px;
+  gap: 25px;
+  z-index: 2;
+}
+
+.log-in .buttons button:first-of-type {
+  width: 100%;
+  border-radius: 63px;
+  padding: 14px 24px;
+  background-color: #caff33;
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  transition: 0.2s all;
+}
+
+.log-in .buttons button:first-of-type:hover {
+  background-color: #8cb124;
+}
+
+.log-in .buttons button:last-of-type {
+  width: 100%;
+  border-radius: 63px;
+  padding: 14px 24px;
+  border: 1px solid #333333;
+  background-color: #262626;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.2s all;
+}
+
+.log-in .buttons button:last-of-type:hover {
+  background-color: #3b3b3b;
+}
+
+.log-in .second {
+  margin-top: -55px;
+  width: 518px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.log-in .second div {
+  width: 32%;
+  border: 1px solid #b3b3b3;
+}
+
+.log-in .second p {
+  font-size: 18px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+.log-in .third {
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 @media (max-width: 1537px) {
   :root {
     --h1FontSize: 38px;
@@ -2157,6 +2346,37 @@ footer .bottom div img {
   }
   .main-4-sec-1 .bottom .main .box div h4 {
     font-size: 20px;
+  }
+
+  /*! ----- login and sing up ----- */
+
+  .log-in {
+    padding: 80px 200px;
+  }
+  .log-in form {
+    grid-template-columns: 320px 320px;
+  }
+  .log-in form input {
+    padding: 20px;
+  }
+  .log-in .buttons {
+    width: 404px;
+  }
+  .log-in .buttons button {
+    font-size: 14px;
+  }
+  .log-in .second {
+    width: 404px;
+    gap: 16px;
+  }
+  .log-in .second p {
+    font-size: 14px;
+  }
+  .log-in .third {
+    gap: 20px;
+  }
+  .log-in .third img {
+    width: 68px;
   }
 }
 
@@ -2426,6 +2646,16 @@ footer .bottom div img {
   .main-4-sec-1 .top {
     text-align: center;
   }
+
+  /*! ----- login and sing up ----- */
+
+  .log-in {
+    padding: 30px;
+  }
+  .log-in form {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 750px) {
@@ -2569,6 +2799,22 @@ footer .bottom div img {
   .main-4-sec-1 .bottom .main .box {
     gap: 18px;
     padding: 24px;
+  }
+
+  /*! ----- login and sing up ----- */
+
+  .log-in {
+    width: 90%;
+  }
+  .log-in .buttons {
+    width: 298px;
+  }
+  .log-in .second {
+    width: 298px;
+    gap: 16px;
+  }
+  .log-in .second div {
+    width: 25%;
   }
 }
 
