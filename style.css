@@ -1129,46 +1129,56 @@ main {
   justify-content: center;
 }
 
-.main-sec-7 .main {
+/* გრადიენტიანი wrapper */
+.gradient-border {
   width: 83%;
+  padding: 1px; /* საზღვრის სისქე */
+  border-radius: 20px;
+  background: linear-gradient(
+    95.43deg,
+    rgba(202, 255, 51, 0.2) 0%,
+    rgba(202, 255, 51, 0) 5.36%
+  );
+}
+
+.gradient-border .main {
+  width: 100%;
   padding: 80px;
-  background-color: #1c1c1c;
-  border: 1px solid #262626;
-  position: relative;
+  background: #1c1c1c;
   border-radius: 20px;
   color: #fff;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 35px;
 }
 
-.main-sec-7 .main img {
+.gradient-border .main img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.main-sec-7 .main h1 {
+.gradient-border .main h1 {
   font-size: 40px;
   font-weight: 400;
 }
 
-.main-sec-7 .main h1 span {
+.gradient-border .main h1 span {
   color: #caff33;
 }
 
-.main-sec-7 .main p {
+.gradient-border .main p {
   color: #b3b3b3;
   font-size: var(--pFontSize);
   font-weight: 300;
   max-width: 1103px;
 }
 
-.main-sec-7 .main button {
+.gradient-border .main button {
   padding: 18px 30px;
-  background-color: #caff33;
+  background: #caff33;
   border: none;
   font-size: 18px;
   font-weight: 400;
@@ -2270,8 +2280,16 @@ footer .bottom div img {
     width: 325px;
   }
   .main-sec-7 .main {
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 60px;
+  }
+  .gradient-border .main h1 {
+    font-size: 30px;
+  }
+
+  .gradient-border .main .buttons {
+    padding: 14px 20px;
+    font-size: 14px;
   }
 
   /*! ----- careers ----- */
@@ -2503,6 +2521,13 @@ footer .bottom div img {
   .main-sec-2 .bottom .third {
     padding-top: 30px;
     border-top: 2px solid #262626;
+  }
+
+  .main-sec-7 .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
   }
 
   /*! ----- careers ----- */
